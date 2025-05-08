@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2016",            // Target modern JavaScript version
+    "module": "commonjs",          // Standard module system for Node.js
+    "declaration": true,            // Generate .d.ts files
+    "outDir": "./dist",             // Output directory for compiled files
+    "rootDir": "src",               // Specify root directory of source files
+    "esModuleInterop": true,        // Enables interoperability with CommonJS modules
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing
+    "strict": true,                 // Enable all strict type-checking options
+    "skipLibCheck": true,           // Skip type checking of declaration files
+    "resolveJsonModule": true       // Allows importing JSON files
+  },
+  "include": ["src/**/*.ts"],      // Include all .ts files in the src directory
+  "exclude": ["node_modules", "dist", "spec"] // Exclude node_modules, dist, and spec folders
+} 

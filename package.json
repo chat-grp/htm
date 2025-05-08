@@ -1,51 +1,42 @@
 {
-  "name": "htm-js",
+  "name": "@chat-grp/htm",
   "version": "0.1.0",
-  "description": "javascript implementation of the Hierarchical Triangular Mesh method used to index the sphere",
-  "main": "index.js",
+  "description": "A utility library for HTM (Hierarchical Triangular Mesh) operations, including trixel vertex calculation.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "babel-node spec/run.js",
-    "start": "babel-node --presets es2015 index.js"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alphanota/htm-js.git"
+    "url": "git+https://github.com/chat-grp/htm.git"
   },
   "keywords": [
-    "Hierarchical",
-    "Triangular",
-    "Mesh",
-    "maps",
-    "szalay",
-    "gray",
-    "fekete",
-    "kunszt",
-    "kukol",
-    "thakar",
-    "database",
-    "gis",
-    "geographic",
-    "information",
-    "system",
-    "coordinates",
-    "omullane",
-    "raster"
+    "HTM",
+    "Hierarchical Triangular Mesh",
+    "trixel",
+    "geometry",
+    "gis"
   ],
-  "author": "Angel Montero",
-  "license": "ISC",
+  "author": "Your Name",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alphanota/htm-js/issues"
+    "url": "https://github.com/chat-grp/htm/issues"
   },
-  "homepage": "https://github.com/alphanota/htm-js#readme",
-  "dependencies": {
-    "babel-cli": "^6.26.0",
-    "husky": "^0.14.3",
-    "lint-staged": "^7.2.0",
-    "prettier": "^1.13.7"
+  "homepage": "https://github.com/chat-grp/htm#readme",
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "jasmine": "^3.1.0"
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@turf/turf": "^7.2.0"
   }
 }
